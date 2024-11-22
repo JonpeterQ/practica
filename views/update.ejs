@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>I'm here too</h1>
+    <div class="forma"></div>
+
+    <form action="/modificar" method="POST">
+        <label for="ftitle2">Title:</label><br>
+        <input type="text" id="ftitle2" name="ftitle2" class="tinput" value="<%= ti %>"><br>
+        <label for="lcont2">Comntent:</label><br>
+        <textarea type="text" id="lcont2" name="lcont2" class="cinput"><%= co %></textarea><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+    
+</body>
+</html>

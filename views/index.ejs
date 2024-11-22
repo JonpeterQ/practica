@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Tournament</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logop">
+            <img src="/images/file.png" alt="Logo Image">
+        </div>
+        <div class="titulo"><p>Mundial de Clubes USTABOT</p></div>
+    </div>
+    <div class="contenedor">
+        <div class="logo1">
+            <img src="images/file.png" alt="Logo Image">
+        </div>
+        <div class="partidos">            
+                <div class="E1">
+                    <form action="/submit" method="POST">
+                        <input type="submit" value="New POST">
+                      </form>
+                </div>
+                <div class="M1">
+                    <p>This website is a practice of ejs as view engine to make the site dynamic. It is not expected to be something great. The point is the backend practice.</p>
+                </div>
+                <% if(locals.titulo){ %>
+                    <div class="seccion">
+                        <% for(let i=0; i<titulo.length; i++){ %>
+                            <div class="E2">
+                                <div class="title">
+                                    <h2>                                    
+                                        <%= titulo[i] %>
+                                    </h2>
+                                </div>
+                                <div>
+                                    <form action="/modify" method="POST">
+                                         <input type="hidden" name="messageIndex" value="<%= i %>">
+                                         <input type="submit" value="UPDATE">
+                                    </form>
+                                    <form action="/delete" method="POST">
+                                        <input type="hidden" name="messageIndex" value="<%= i %>">
+                                        <input type="submit" value="DELETE">
+                                   </form>
+                                </div>                         
+                            </div>
+                            
+                            <div class="M2">
+                                <p><%= contenido[i] %></p>                                    
+                            </div> 
+                        <% } %>                    
+                    </div>     
+                <% } %>      
+        </div>
+        <div class="proximo"></div>
+    </div>
+    
+    
+</body>
+</html>

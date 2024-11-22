@@ -1,0 +1,74 @@
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.header {
+    width: 100%;
+    background-color: blue;
+    color: azure;
+    border: solid blue;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor {
+    height: 70vh;
+    display: grid;
+    grid-template: 
+    "content" 100% / 1fr 2fr 1fr;
+}
+
+.logop > img {
+    width: 30px;
+    height: auto;
+    display: flex;
+    margin-top: 35%;
+}
+
+.logo1 {
+    display: flex;
+    align-items: center;
+}
+
+.logo1 > img {
+    width: 100%;
+    height: auto;    
+}
+
+.E1 {
+    height: 50px;
+    padding: 5px;
+}
+
+.seccion {
+    margin: 10px;
+    padding: 10px;
+    border-style: inset;
+}
+
+.E2 {    
+    display: flex;
+    justify-content: space-between;
+    border-style: groove;
+}
+
+.E2 form {
+    margin: 3px;
+}
+
+form {
+    margin-left: 50px;
+    padding: 3px;
+}
+
+.tinput {
+    width: 500px;
+}
+.cinput {
+    width: 500px;
+    height: 400px;
+}
